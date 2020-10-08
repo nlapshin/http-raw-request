@@ -9,8 +9,8 @@ module.exports = {
 		return `${CRLF}${CRLF}`;
 	},
 
-	startLine({ method = 'GET', uri = '/', httpVersion = '1.1' }) {
-		return `${method} ${uri} HTTP/${httpVersion}`;
+	startLine({ method = 'GET', url = '/', httpVersion = '1.1' }) {
+		return `${method} ${url} HTTP/${httpVersion}`;
 	},
 
 	headers(headers = {}) {

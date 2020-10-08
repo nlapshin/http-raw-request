@@ -4,7 +4,7 @@ const httpRawRequest = require('./');
 describe('http-raw-request', () => {
 	it('should create simple HTTP request', () => {
 		expect(httpRawRequest()).to.equal('GET / HTTP/1.1\r\n\r\n');
-		expect(httpRawRequest({ method: 'OPTIONS', httpVersion: '1.0', uri: '/path' })).to.equal('OPTIONS /path HTTP/1.0\r\n\r\n');
+		expect(httpRawRequest({ method: 'OPTIONS', httpVersion: '1.0', url: '/path' })).to.equal('OPTIONS /path HTTP/1.0\r\n\r\n');
 	});
 
 	it('should create simple HTTP request with headers', () => {
