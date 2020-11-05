@@ -1,6 +1,6 @@
 {
   "name": "http-raw-request",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Generate http request message",
   "main": "src/index.js",
   "types": "src/index.d.ts",
