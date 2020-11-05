@@ -7,10 +7,4 @@ declare module 'http-raw-request' {
     method?: string;
     url?: string;
 	}
-
-	const httpRawRequest = {
-		toString
-	};
-
-	export default httpRawRequest;
 }
